@@ -1,0 +1,102 @@
+:root{
+    --primaryColor:#b6b619;
+    --secondaryColor:#A5A5A4;
+    --lightColor:#fffff1;
+    --bgcolor-1:#242422;
+    --bgcolor-2:#1f1f1c;
+    --padding:8%;
+
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html
+{font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.13rem;
+    cursor: pointer;
+    
+
+}
+nav{
+   
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rems;
+  
+}
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+.content{
+    flex-grow: 1;
+    padding:0 var(--padding);
+    display: flex;
+    align-items: center;
+   
+}
+.conter-text{
+    position: relative;
+   
+    color: var(--secondaryColor);
+}
+
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.13rem;
+    color: var(--secondaryColor);
+}
+.about{
+    background-color: var(--bgcolor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about .contentt-text{
+    width: 35%;
+}
+p{ 
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
